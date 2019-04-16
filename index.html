@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>海洋保护</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
+    <script>
+        document.documentElement.className = 'js';
+        var supportsCssVars = function() {
+            var s = document.createElement('style'),
+            support;
+
+            s.innerHTML = "root: { --tmp-var: bold; }";
+            document.head.appendChild(s);
+            support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+            s.parentNode.removeChild(s);
+            return support;
+        }
+        if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+    </script>
+</head>
+<body class="demo-2">
+
+    <main>
+        <div class="content-warp"></div>
+        <div class="content-warp"></div>
+        <div class="content-warp"></div>
+        <div class="content-warp"></div>
+        <div class="content-warp"></div>
+        <div class="content-warp"></div>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/demo2.js"></script>
+</body>
+</html>
