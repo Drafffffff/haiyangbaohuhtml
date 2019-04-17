@@ -204,6 +204,7 @@ a:focus {
 	margin: 0;
 	text-transform: lowercase;
 	z-index: 10;
+	text-align: center;
 	cursor: default;
 }
 
