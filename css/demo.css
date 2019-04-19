@@ -321,7 +321,7 @@ a:focus {
 }
 .content--my-2 .content__bin-top {
 	height: 100%;
-	width: auto;
+	width: 100%;
 	grid-area: bin-top;
 }
 
