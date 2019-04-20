@@ -124,7 +124,7 @@ a:focus {
 .morph {
 	position: relative;
 	height: 100%;
-	fill: var(--background-color-2);
+	fill: #b4d3e0;
 	flex: none;
 }
 
@@ -292,50 +292,53 @@ a:focus {
 /* my-2 */
 .content--my-2 {
 	pointer-events: auto;
-	justify-content: center;
-	align-content: center;
-	grid-template-columns: 6.08% 2.93% 23.24% 9.30% 49.45% 2.93% 6.08%;
-	grid-template-rows: 15.23% 40.49% 22.40% 9.77% 12.11%;
+	justify-content: start;
+	align-content: start;
+	grid-template-columns: 8.35% 3.22% 22.25% 7.76% 46.85% 3.22% 8.35%;
+	grid-template-rows: 8.33% 47.92% 21.88% 21.88%;
 	grid-template-areas:
 		"hand hand hand hand . . ."
-		"hand hand hand hand top top ."
-		". . . . top top . "
-		". a bg bg bg b ."
-		". . bg bg bg . .";
+		"hand hand hand hand . . ."
+		". . . . text . ."
+		". a bin bin bin b .";
 
 }
 
 .content__fill1 {
-	grid-area: a;
-	background: #77888f;
-	height: 100%;
-	width: 100%;
-	position: absolute;
+	background: #687787;
+	height: 10%;
+	grid-area: 4/2/5/7;
 	z-index: -1000;
+
 }
 
 .content__fill2 {
-	grid-area: b;
-	background: #77888f;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	z-index: -1000;
+	background: #596677;
+	height: 35%;
+	grid-area: 4/2/5/7;
+	z-index: -1001;
 }
 
 .content__fill3 {
-	grid-area: bg;
-	background: #77888f;
+	background: #596677;
 	height: 100%;
-	width: 100%;
-	position: absolute;
-	z-index: -1000;
+	grid-area: bin;
+	z-index: -1001;
+}
+
+.content__handline {
+
+	grid-area: text;
+	height: 124px;
+	position: relative;
+	left: 20px;
+	top: -50px;
 }
 
 .content--my-2 .content__hand {
 	width: 100%;
 	height: auto;
-    
+
 	grid-area: hand;
 }
 
@@ -350,7 +353,7 @@ a:focus {
 .content--my-2 .content__top {
 	width: 100%;
 	height: 100%;
-	grid-area: top;
+	grid-area: 2/4/4/7;
 
 }
 
@@ -365,20 +368,56 @@ a:focus {
 	pointer-events: auto;
 	justify-content: start;
 	align-content: start;
-	grid-template-columns: 9.00% 81.99% 9.00%;
-	grid-template-rows: 70% 30%;
-	grid-template-areas:
-		". bg ."
-		". bg .";
+	grid-template-columns: 11.57% 10.07% 7.25% 1.46% 3.07% 1.90% 9.15% 6.30% 7.32% 3.81% 19.59% 6.95% 11.57%;
+	grid-template-rows: 21.61% 9.24% 20.44% 9.64% 3.65% 0.56% 10.74% 11.20% 2.99% 1.56% 3.65% 3.39% 1.33%;
 }
 
+.content__fill4 {
+	background: #596677;
+	height: 100%;
+	grid-area: 1/2/14/13;
+	z-index: -1001;
+}
+
+.content__rb1 {
+	height: 100%;
+	grid-area: 5/3/8/5;
+	z-index: -100;
+}
+
+.content__rb2 {
+	height: 100%;
+	grid-area: 7/7/13/9;
+	z-index: -100;
+}
+
+.content__rb3 {
+	height: 100%;
+	grid-area: 4/8/10/10;
+	z-index: -101;
+}
+
+.content__rb4 {
+	height: 100%;
+	grid-area: 6/11/11/12;
+	z-index: -100;
+}
+
+.content__rb5 {
+	height: 100%;
+	grid-area: 9/4/12/6;
+	z-index: -100;
+}
+.content__text1{
+	height:100%;
+	grid-area: 2/11/3/12;
+}
 
 .content--my-3 .content__wave {
 	width: auto;
 	display: block;
 	overflow: hidden;
-	grid-column: 2/ 3;
-	grid-row: 2/ 3;
+	grid-area: 7/2/14/13;
 	align-self: end;
 }
 
@@ -425,10 +464,11 @@ a:focus {
 	height: 100%;
 	grid-area: stick;
 }
-.content--my-4 .content__bgGrandient{
+
+.content--my-4 .content__bgGrandient {
 
 	z-index: -1000;
-	background: linear-gradient(#77888f,#5099b2);
+	background: linear-gradient(#77888f, #5099b2);
 	grid-column: 2/ 11;
 	grid-row: 1/ 10;
 }
@@ -438,7 +478,7 @@ a:focus {
 	pointer-events: auto;
 	justify-content: start;
 	align-content: start;
-	grid-template-columns:9.00% 26.21% 27.82% 27.96% 9.00%;
+	grid-template-columns: 9.00% 26.21% 27.82% 27.96% 9.00%;
 	grid-template-rows: 82.55% 10.94% 6.51%;
 	grid-template-areas:
 		". pic pic pic ."
@@ -447,22 +487,25 @@ a:focus {
 	;
 }
 
-.content--my-5  .content__pic{
+.content--my-5 .content__pic {
 	width: 100%;
 	height: 100%;
 	grid-area: pic;
 }
-.content--my-5  .content__bg{
+
+.content--my-5 .content__bg {
 	z-index: -1000;
 	background: #5099b2;
 	grid-column: 2/ 5;
 	grid-row: 1/ 4;
 }
-.palsticAnime{
-	width:100%;
-	height:100%;
+
+.palsticAnime {
+	width: 100%;
+	height: 100%;
 }
-.part{
+
+.part {
 
 	height: 25px;
 	width: 25px;
@@ -470,14 +513,14 @@ a:focus {
 	left: 50vw;
 	top: 50vh;
 
-  }
+}
 
 /* my-6 */
 .content--my-6 {
 	pointer-events: auto;
 	justify-content: start;
 	align-content: start;
-	grid-template-columns:9.00% 26.21% 27.82% 27.96% 9.00%;
+	grid-template-columns: 9.00% 26.21% 27.82% 27.96% 9.00%;
 	grid-template-rows: 82.55% 10.94% 6.51%;
 	grid-template-areas:
 		". pic pic pic ."
@@ -485,7 +528,8 @@ a:focus {
 		". . . . ."
 	;
 }
-.content--my-6  .content__bg{
+
+.content--my-6 .content__bg {
 	z-index: -1000;
 	background: #5099b2;
 	grid-column: 2/ 5;
@@ -634,7 +678,7 @@ a:focus {
 
 /* Demo themes */
 .demo-2 {
-	--background-color: #1d1b22;
+	--background-color: #6f8da9;
 	--background-color-2: #342560;
 	--background-color-3: #553e9a;
 	--text-color: #fff;
