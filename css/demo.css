@@ -19,7 +19,7 @@ body {
 	--background-color-3: #202692;
 	--link-color: #03b9f1;
 	--link-hover-color: #fff;
-	font-family: 'fzcs';
+	font-family: "Microsoft YaHei", "Microsoft JhengHei", "微軟正黑體", "apple LiGothic Medium", "Verdana", "Geneva", "sans-serif";
 	font-weight: 500;
 	color: #fff;
 	color: var(--text-color);
@@ -735,6 +735,8 @@ a:active {
 
 bbb {
 	font-size: 1.6em;
+	font-weight: bolder;
+	letter-spacing: 0.2em;
 }
 
 .my5__text {
@@ -858,11 +860,13 @@ bbb {
 }
 
 b {
+	font-weight: bolder;
 	font-size: 2em;
 	color: #C61E12;
 }
 
 bb {
+	font-weight: bolder;
 	color: #C61E12;
 	font-size: 1.8em;
 }
