@@ -69,13 +69,12 @@ main {
 
 a {
 	text-decoration: none;
-	color: var(--link-color);
 	outline: none;
 }
 
 a:hover,
 a:focus {
-	color: var(--link-hover-color);
+
 	outline: none;
 }
 
@@ -353,6 +352,7 @@ a:focus {
 	-moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
 	-o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
 }
+
 .x6 {
 	left: 70%;
 	-webkit-transform: scale(0.3);
@@ -363,6 +363,7 @@ a:focus {
 	-moz-animation: moveclouds 9s linear infinite, sideWays 1.5s ease-in-out infinite alternate;
 	-o-animation: moveclouds 9s linear infinite, sideWays 1.5s ease-in-out infinite alternate;
 }
+
 .x7 {
 	left: 46%;
 	-webkit-transform: scale(0.3);
@@ -373,6 +374,7 @@ a:focus {
 	-moz-animation: moveclouds 4s linear infinite, sideWays 3s ease-in-out infinite alternate;
 	-o-animation: moveclouds 4s linear infinite, sideWays 3s ease-in-out infinite alternate;
 }
+
 @-webkit-keyframes moveclouds {
 	0% {
 		top: 500px;
@@ -673,6 +675,42 @@ a:focus {
 	grid-area: 8/4/9/5;
 }
 
+.my4__more {
+	grid-area: 1/2/10/13;
+	align-self: end;
+	justify-self: end;
+	position: relative;
+	right: 30px;
+	bottom: 20px;
+}
+
+a:link {
+	color: #596677
+}
+
+a:visited {
+	color: #596677
+}
+
+a:hover {
+	color: #454f5e
+}
+
+a:active {
+	color: #596677
+}
+
+.more__a {
+	position: absolute;
+	top:45px;
+	left: 15px;
+}
+
+.content__more {
+	width: 120px;
+
+}
+
 .content--my-4 .content__bgGrandient {
 
 	z-index: -1000;
@@ -754,7 +792,15 @@ bbb {
 	grid-column: 2/ 5;
 	grid-row: 1/ 4;
 }
-
+.my6__more{
+	grid-area: 1/2/5/5;
+	align-self: end;
+	justify-self: start;
+	position: relative;
+	left: 30px;
+	bottom: 20px;
+	z-index: -999;
+}
 .my6__text {
 	font-size: 1.3em;
 	grid-area: 2/3/4/5;
