@@ -443,14 +443,16 @@ a:focus {
 	pointer-events: auto;
 	justify-content: start;
 	align-content: start;
-	grid-template-columns: 20% 16.5% 5% 47.6% 10.9%;
-	grid-template-rows: 15.4% 40% 22.3% 22.3%;
-	grid-template-areas:
-		"... title title title"
-		"author ... desc desc"
-		"author ... link link";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 40% 24% 1fr;
 }
 
+.my1__bg{
+	grid-area: 1/1/2/4;
+	justify-self: end;
+	position: relative;
+
+}
 /* my-2 */
 .content--my-2 {
 	pointer-events: auto;
@@ -1008,12 +1010,7 @@ bb {
 
 /* Demo themes */
 .demo-2 {
-	--background-color: #6f8da9;
-	--background-color-2: #342560;
-	--background-color-3: #553e9a;
-	--text-color: #fff;
-	--link-color: #f9ed8a;
-	--link-hover-color: #fff;
+	--background-color: #ffffff;
 }
 
 @media screen and (max-width: 50em) {
