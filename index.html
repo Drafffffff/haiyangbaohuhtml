@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>龟·塑</title>
+    <title>PLASTFREE</title>
     <meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
     <meta name="keywords"
         content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
@@ -29,10 +29,13 @@
     </script>
 
 <body class="demo-2 ">
- 
+
     <main>
 
         <div class="morph-wrap">
+
+
+
             <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
                 <defs>
                     <filter id="goo">
@@ -49,16 +52,34 @@
             </svg>
         </div>
 
+        <div class="content-wrapbar">
+            <a href="./index.html" id="bar-home">首页</a>
+            <a href="./store.html" id="bar-store">线下门店</a>
+            <a href="./about.html" id="bar-about">关于我们</a>
+            <a href="./login.html" id="bar-login">登陆</a>
+
+        </div>
+
         <div class="content-wrap">
             <div class="content content--layout content--my-1">
+                <img src="./img/bg-svg/index-page1.svg" class="my1-topbar">
+                <img src="./img/index-logo.svg" onclick="location='./index.html'" class="my_logo">
+                <img src="./img/right-bar.svg" class="my_rightbar">
+                <div class="my1-pcicontainer content__float">
 
+                    <img src="./img/index-1.svg" class="my1__turtle">
+                    <img src="./img/index-2.svg" onmousemove="turtleIn()" class="my1__turtle2" id="turtleElement">
+
+                </div>
+                <p class="my1__text">请帮我擦掉身上的垃圾</p>
+                <img src="./img/arrow.svg" class="my1__arrow">
             </div>
         </div>
         <div class="content-wrap">
             <div class="content content--layout content--my-2">
-
+                <!-- 
                 <img src="./img/svg-2/hand.svg" class="content__hand" id="handElement"
-                    style="transform: translateX(-700px); ">
+                    style="transform: translateX(-700px); "> -->
                 <img src="./img/svg-2/top.svg" class="content__top">
                 <img src="./img/svg-2/hand-line.svg" class="content__handline">
 
@@ -83,7 +104,7 @@
                         d="M1047,141.9V383H-1V136.7c0,0,233.2-33.3,662.9,12.4C661.9,149.1,881.7,172.1,1047,141.9z"
                         fill="#88a1b7" opacity="0.56" />
                 </svg>
-                
+
 
                 <div class="content__text1 textIn">
                     <p>塑料平均使用只有半小时</p>
@@ -98,15 +119,15 @@
         </div>
         <div class="content-wrap">
             <div class="content content--layout content--my-4">
-                    <div id="bubbles">
-                            <div class="bubble x1"></div>
-                            <div class="bubble x2"></div>
-                            <div class="bubble x3"></div>
-                            <div class="bubble x4"></div>
-                            <div class="bubble x5"></div>
-                            <div class="bubble x6"></div>
-                            <div class="bubble x7"></div>
-                    </div>
+                <div id="bubbles">
+                    <div class="bubble x1"></div>
+                    <div class="bubble x2"></div>
+                    <div class="bubble x3"></div>
+                    <div class="bubble x4"></div>
+                    <div class="bubble x5"></div>
+                    <div class="bubble x6"></div>
+                    <div class="bubble x7"></div>
+                </div>
                 <div class="content__bgGrandient"></div>
 
                 <div class="plasticTime1 textIn">
@@ -134,7 +155,7 @@
 
 
                 <div class="content__more my4__more">
-                    <img src="./img/svg-2/morebubble.svg" >
+                    <img src="./img/svg-2/morebubble.svg">
 
                     <div class="more__a">
                         <a href="./hysjt.html">了解更多 ></a>
@@ -146,15 +167,15 @@
         </div>
         <div class="content-wrap">
             <div class="content content--layout content--my-5">
-                    <div id="bubbles">
-                            <div class="bubble x1"></div>
-                            <div class="bubble x2"></div>
-                            <div class="bubble x3"></div> 
-                            <div class="bubble x4"></div>
-                            <div class="bubble x5"></div>
-                            <div class="bubble x6"></div>
-                            <div class="bubble x7"></div>
-                    </div>
+                <div id="bubbles">
+                    <div class="bubble x1"></div>
+                    <div class="bubble x2"></div>
+                    <div class="bubble x3"></div>
+                    <div class="bubble x4"></div>
+                    <div class="bubble x5"></div>
+                    <div class="bubble x6"></div>
+                    <div class="bubble x7"></div>
+                </div>
                 <div class="content__bg"></div>
                 <section class="content__pic">
                     <div class="part js-anime8"><img src="./img/plastic/p1.svg" class="palsticAnime "></div>
@@ -201,29 +222,22 @@
 
         <div class="content-wrap">
             <div class="content content--layout content--my-6">
-                    <div id="bubbles">
-                            <div class="bubble x1"></div>
-                            <div class="bubble x2"></div>
-                            <div class="bubble x3"></div>
-                            <div class="bubble x4"></div>
-                            <div class="bubble x5"></div>
-                            <div class="bubble x6"></div>
-                            <div class="bubble x7"></div>
-                    </div>
-                <div class="content__bg"></div>
+                <div id="bubbles">
+                    <div class="bubble x1"></div>
+                    <div class="bubble x2"></div>
+                    <div class="bubble x3"></div>
+                    <div class="bubble x4"></div>
+                    <div class="bubble x5"></div>
+                    <div class="bubble x6"></div>
+                    <div class="bubble x7"></div>
+                </div>
+                <img src="./img/bubble.svg" class="my6-bubble">
+                <img src="./img/danger.svg" class="my6-danger content__float">
+
                 <div class="my6__text textIn">
                     <p>1块塑料碎片海龟死亡率增加20%</p>
                     <p> 14块塑料碎片导致海龟死亡率增加50%</p>
                 </div>
-                <div class="content__more my6__more">
-                    <img src="./img/svg-2/morebubble.svg" >
-
-                    <div class="more__a">
-                        <a href="./hgfl.html">了解更多 ></a>
-                    </div>
-
-                </div>
-                <img src="./img/svg-2/plasticpart.svg" class="my6__plastic content__float">
                 <img src="./img/svg-2/6smallbottle.svg" class="my6__bottle">
                 <!-- <img class="content__img" src="img/3.jpg" alt="Some image" />
                 <h3 class="content__title">6</h3>
@@ -235,41 +249,59 @@
 
         <div class="content-wrap">
             <div class="content content--layout content--my-7">
-                    <div id="bubbles">
-                            <div class="bubble x1"></div>
-                            <div class="bubble x2"></div>
-                            <div class="bubble x3"></div>
-                            <div class="bubble x4"></div>
-                            <div class="bubble x5"></div>
-                            <div class="bubble x6"></div>
-                            <div class="bubble x7"></div>
-                    </div>
+                <div id="bubbles">
+                    <div class="bubble x1"></div>
+                    <div class="bubble x2"></div>
+                    <div class="bubble x3"></div>
+                    <div class="bubble x4"></div>
+                    <div class="bubble x5"></div>
+                    <div class="bubble x6"></div>
+                    <div class="bubble x7"></div>
+                </div>
                 <div class="content__bg"></div>
                 <img src="./img/svg-2/my7bottle.svg" class="my7__bottle">
-                <img src="./img/svg-2/rubbishbg.svg" class="my7__rubbishbg">
+                <img src="./img/index-1.svg" class="my7__rubbishbg">
                 <div class="my7__text textIn">
                     <p>
                         <bb>2050</bb>
                     </p>
                     <p>几乎所有海龟食用碎片</p>
-                    <p>导致<b>死亡</b></p>
+                    <p>导致</p>
+                    <b>死亡</b>
                 </div>
             </div>
         </div>
 
+        <div class="content-wrap">
+            <div class="content content--layout content--my-8">
+                <div id="bubbles">
+                    <div class="bubble x1"></div>
+                    <div class="bubble x2"></div>
+                    <div class="bubble x3"></div>
+                    <div class="bubble x4"></div>
+                    <div class="bubble x5"></div>
+                    <div class="bubble x6"></div>
+                    <div class="bubble x7"></div>
+                </div>
+                <p class="my8-text">保护海龟</br>我们在行动</p>
+                <img src="./img/bubble2.svg" class="my8-bubble">
 
-        
+            </div>
+        </div>
+
+
         <!-- Related demos -->
         <section class="content content--related">
-            <p class="content__info"></p>
-            <a class="content__related-item" href="https://tympanus.net/Development/ElasticSVGElements/">
-                <img class="content__related-img" src="">
-                <h3 class="content__related-title"></h3>
-            </a>
-            <a class="content__related-item" href="https://tympanus.net/Development/ItemRevealer/">
-                <img class="content__related-img" src="">
-                <h3 class="content__related-title"></h3>
-            </a>
+            <h1 class="related-h1">减塑行动</h1>
+            <p class="related-p">活动说明：上传一次生活中“减塑”行为的照片即可获得1积分，</br>积分可用于线下兑换环保制品。</p>
+            <h5 class="related-h5">注：“减塑”行动（包括不等于）不使用一次性塑料制品、自备餐具环保袋、循环使用塑料等等。</h5>
+                <a href="./share.html" class="related-share" id="related-share">立刻分享</a>
+                <div class="mypagefoot">
+                        <img src="./img/top.svg" onclick="pageScroll()" class="foottop">
+
+                    <img src="./img/index-logo.svg" class="footlogo">
+                    <p class="ll">©版权所有 不得转载</p>
+                </div>
         </section>
     </main>
     <script src="js/imagesloaded.pkgd.min.js"></script>

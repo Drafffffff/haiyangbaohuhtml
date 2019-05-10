@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>关于-PLASTFREE</title>
+    <meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
+    <meta name="keywords"
+        content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
+    <script>
+        document.documentElement.className = 'js';
+        var supportsCssVars = function () {
+            var s = document.createElement('style'),
+                support;
+
+            s.innerHTML = "root: { --tmp-var: bold; }";
+            document.head.appendChild(s);
+            support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+            s.parentNode.removeChild(s);
+            return support;
+        }
+        if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+    </script>
+</head>
+
+<body class="demo-2 ">
+
+    <main>
+
+        <div class="content-wrapbar">
+            <a href="./index.html" id="bar-home">首页</a>
+            <a href="./store.html" id="bar-store">线下门店</a>
+            <a href="./login.html" id="bar-login">登陆</a>
+
+        </div>
+        
+        <div class="content-wrap">
+            <div class="content content--layout content--my-1">
+                <img src="./img/logo.svg" onclick="location='./index.html'" class="my_logo">
+                <img src="./img/right-bar.svg" class="my_rightbar">
+                <img src="./img/svg-3/content1-bg.svg" class="my1__bg">
+                <img src="./img/svg-3/1/bubble.svg" alt="" class="my1__bubble">
+                <div class="my1__fill"></div>
+                <div class="my1__title">
+                    <p>关于我们</p>
+                </div>
+                <div class="my1__p">
+                    <p>PLASTFREE倡导“无塑生活”的理念，创办PLASTFREE店铺出售无塑商品，其中包括再生纸吸管，</p>
+                    <p>手工牛皮纸包包，竹制牙刷等。我们倡导“无塑生活”，减塑生活的重点不在于把塑料视为敌人，</p>
+                    <p>只是更有意义的选择对自己友善的生活方式。我们通过平台倡导“无塑行动”为海洋生态尽一份</p>
+                    <p>力量，平台践行“无塑生活”的理念，呼吁大家少使用一次性塑料制品，建立环保生活的态度</p>
+                    <p>从源头“减塑”。</p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Related demos -->
+        <section class="content  content--my-4">
+            <div class="my4__title">
+                <p>联系我们</p>
+            </div>
+
+
+            <img src="./img/svg-3/4/03.svg" onclick="history.go(-1)" class="my4__back">
+            <img src="./img/about/textbox.svg" class="my4__textbox">
+            <img src="./img/about/buttom.svg" class="my4__buttom">
+        </section>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/hysjt.js"></script>
+    <!-- <script src="js/control.js"></script> -->
+</body>
+
+</html>

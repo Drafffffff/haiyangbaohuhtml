@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 535 241" style="enable-background:new 0 0 535 241;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#F2F2F2;}
+	.st2{font-family:'MicrosoftYaHei';}
+	.st3{font-size:18px;}
+	.st4{letter-spacing:2.73;}
+</style>
+<rect x="2" y="2.76" class="st0" width="526" height="42"/>
+<rect x="2" y="66.25" class="st0" width="526" height="42"/>
+<rect x="2" y="126.76" class="st0" width="526" height="42"/>
+<rect x="2" y="190.25" class="st0" width="526" height="42"/>
+<text transform="matrix(1.1 0 0 1 14.5 33.1814)" class="st1 st2 st3 st4">姓名</text>
+<text transform="matrix(1.1 0 0 1 14.501 96.6726)" class="st1 st2 st3 st4">手机号</text>
+<text transform="matrix(1.1 0 0 1 14.5 157.1814)" class="st1 st2 st3 st4">用户名</text>
+<text transform="matrix(1.1 0 0 1 14.501 220.6726)" class="st1 st2 st3 st4">密码</text>
+</svg>

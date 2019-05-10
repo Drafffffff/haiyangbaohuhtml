@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登陆-PLASTFREE</title>
+    <meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
+    <meta name="keywords"
+        content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
+    <script>
+        document.documentElement.className = 'js';
+        var supportsCssVars = function () {
+            var s = document.createElement('style'),
+                support;
+
+            s.innerHTML = "root: { --tmp-var: bold; }";
+            document.head.appendChild(s);
+            support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+            s.parentNode.removeChild(s);
+            return support;
+        }
+        if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+    </script>
+</head>
+
+<body class="demo-2 ">
+
+    <main>
+        <div class="content-wrap">
+            <div class="content content--layout content--my-1">
+                <img src="./img/login/logo.svg" onclick="location='./index.html'" class="my_logo">
+                <img src="./img/login/sidebar.svg" class="my_rightbar">
+
+                <div class="my1__title">
+                    <img src="./img/login/logo.svg" class="main_logo">
+                </div>
+
+                <img src="./img/login/input.svg" class="my_input">
+                <img src="./img/login/login.svg"  onclick="location='./share.html'" class="my_login">
+
+                <img src="./img/svg-3/4/03.svg" onclick="history.go(-1)" class="my4__back">
+
+                <a href="./signin.html" class="mya">注册账号/忘记密码</a>
+
+            </div>
+
+
+        </div>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/hysjt.js"></script>
+    <!-- <script src="js/control.js"></script> -->
+</body>
+
+</html>

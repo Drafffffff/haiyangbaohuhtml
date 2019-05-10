@@ -287,7 +287,7 @@ a:focus {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	pointer-events:none;
+	pointer-events: none;
 }
 
 .bubble {
@@ -438,6 +438,49 @@ a:focus {
 
 
 
+.content-wrapbar {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 60px;
+	background: #fff;
+}
+
+
+#bar-home {
+	color: #6f8da9;
+	position: relative;
+	left: -150px;
+	font-weight: bold;
+
+}
+
+#bar-store {
+	color: #6f8da9;
+	font-weight: bold;
+	position: relative;
+	left: -50px;
+}
+
+#bar-about {
+	color: #6f8da9;
+	font-weight: bold;
+	position: relative;
+	left: 50px;
+}
+
+#bar-login {
+	color: #6f8da9;
+	font-weight: bold;
+	position: relative;
+	left: 150px;
+
+
+}
+
+
 /* my-1 */
 .content--my-1 {
 	pointer-events: auto;
@@ -446,9 +489,76 @@ a:focus {
 	grid-template-columns: 20% 16.5% 5% 47.6% 10.9%;
 	grid-template-rows: 15.4% 40% 22.3% 22.3%;
 	grid-template-areas:
-		"... title title title"
-		"author ... desc desc"
-		"author ... link link";
+		"a a a a a"
+		"b b b b b"
+		"b b b b b"
+		"b b b b b";
+}
+
+.my1-topbar {
+	grid-area: a;
+	width: 100%;
+}
+
+.my_logo {
+	grid-area: a;
+	position: absolute;
+	height: 20px;
+	top: 40px;
+	left: 100px;
+}
+
+.my_rightbar {
+	grid-area: a;
+	position: absolute;
+	height: 20px;
+	top: 40px;
+	right: 100px;
+}
+
+.my1__turtle {
+	height: 100%;
+	position: absolute;
+
+}
+
+.my1-pcicontainer {
+	grid-area: b;
+	align-self: center;
+	justify-self: center;
+	height: 50%;
+	width: 368px;
+	position: absolute;
+	top: 120px;
+}
+
+.my1__turtle2 {
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+}
+
+
+.my1__text {
+	grid-area: b;
+	align-self: center;
+	justify-self: center;
+	position: absolute;
+	/* top: 10px; */
+	bottom: 180px;
+	font-size: 1.1em;
+	font-weight: normal;
+	letter-spacing: 5px;
+
+}
+
+.my1__arrow {
+	grid-area: b;
+	align-self: center;
+	justify-self: center;
+	position: absolute;
+	height: 20px;
+	bottom: 150px;
 }
 
 /* my-2 */
@@ -593,7 +703,7 @@ a:focus {
 
 .content__text1 {
 	height: 100%;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	grid-area: 2/11/3/12;
 	text-align: center;
 }
@@ -703,7 +813,7 @@ a:active {
 
 .more__a {
 	position: absolute;
-	top:45px;
+	top: 45px;
 	left: 15px;
 }
 
@@ -795,7 +905,15 @@ bbb {
 	grid-column: 2/ 5;
 	grid-row: 1/ 4;
 }
-.my6__more{
+
+.my6-bubble {
+	height: 130px;
+	position: absolute;
+	right: 45%;
+	top: 130px;
+}
+
+.my6__more {
 	grid-area: 1/2/5/5;
 	align-self: end;
 	justify-self: start;
@@ -804,6 +922,14 @@ bbb {
 	bottom: 20px;
 	/* z-index: -999; */
 }
+
+.my6-danger {
+	height: 50px;
+	position: absolute;
+	right: 25%;
+	top: 300px;
+}
+
 .my6__text {
 	font-size: 1.3em;
 	grid-area: 2/3/4/5;
@@ -839,8 +965,10 @@ bbb {
 .my7__rubbishbg {
 	height: 80%;
 	grid-area: 2/2/4/5;
-	align-self: end;
-	justify-self: end;
+	align-self: center;
+	justify-self: center;
+	position: absolute;
+	top: 250px;
 }
 
 .my7__bottle {
@@ -854,23 +982,121 @@ bbb {
 
 .my7__text {
 	text-align: center;
-	align-self: center;
+	/* align-self: center; */
 	grid-area: 2/2/3/5;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 b {
 	font-weight: bolder;
-	font-size: 2em;
-	color: #C61E12;
+	font-size: 1.5em;
+	color: #873939;
 }
 
 bb {
 	font-weight: bolder;
-	color: #C61E12;
-	font-size: 1.8em;
+	color: #873939;
+	font-size: 1.5em;
 }
 
+.content--my-8 {
+	pointer-events: auto;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: 100%;
+	grid-template-rows: 100%;
+	grid-template-areas:
+		"a"
+	;
+}
+
+.my8-text {
+	height: 100px;
+	width: 400px;
+	text-align: center;
+	grid-area: a;
+	justify-self: center;
+	align-self: center;
+	position: absolute;
+	top: 150px;
+	font-size: 1.8em;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	line-height: 70px;
+}
+
+.my8-bubble {
+	height: 300px;
+	justify-self: center;
+	align-self: center;
+	position: absolute;
+	bottom: 150px;
+}
+
+.mypagefoot {
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #194463;
+}
+
+.related-h1 {
+	letter-spacing: 6px;
+	top: 20px;
+	font-size: 2.4em;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.related-h5 {
+	letter-spacing: 3px;
+	top: 160px;
+
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+
+.related-p {
+	letter-spacing: 6px;
+	top: 100px;
+	line-height: 30px;
+	position: absolute;
+	width: 100%;
+}
+
+#related-share {
+	font-size: 1.6em;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: #fff;
+	position: absolute;
+	top: 260px;
+	width: 100%;
+	text-align: center;
+}
+
+.footlogo {
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.foottop{
+	height: 40px;
+	position: relative;
+	top:30px;
+}
+.ll{
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 /* layout-2 */
 .content--layout-2 {
 	grid-template-areas: "... title title title"

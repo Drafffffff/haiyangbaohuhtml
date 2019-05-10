@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>线下门店-PLASTFREE</title>
+    <meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
+    <meta name="keywords"
+        content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/store.css" />
+    <link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
+    <script>
+        document.documentElement.className = 'js';
+        var supportsCssVars = function () {
+            var s = document.createElement('style'),
+                support;
+
+            s.innerHTML = "root: { --tmp-var: bold; }";
+            document.head.appendChild(s);
+            support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+            s.parentNode.removeChild(s);
+            return support;
+        }
+        if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+    </script>
+</head>
+
+<body class="demo-2 ">
+
+    <main>
+
+        <div class="content-wrapbar">
+            <a href="./index.html" id="bar-home">首页</a>
+            <a href="./about.html" id="bar-about">关于我们</a>
+            <a href="./login.html" id="bar-login">登陆</a>
+
+        </div>
+
+        <div class="content-wrap">
+            <div class="content content--layout content--my-1">
+                <img src="./img/logo.svg" onclick="location='./index.html'" class="my_logo">
+                <img src="./img/right-bar.svg" class="my_rightbar">
+                <div class="my4__title">
+                    <p>线下门店</p>
+                </div>
+                <p class="my_address">线下门店：幸福路5号208</p>
+                <img src="./img/store/map.svg" class="my_map">
+            </div>
+
+
+        </div>
+
+        <!-- Related demos -->
+        <section class="content  content--my-4">
+                <div class="my4__title">
+                        <p style="color:#fff">部分产品</p>
+                    </div>
+
+                    <img src="./img/store/product.png"  class="my_class">
+                    <img src="./img/store/jt.png"  class="my_class1">
+
+            <!-- <img src="./img/store/product.svg" class="my_prodect"> -->
+                <p class="my_address1">"门店销售课再生设计产品，产品运用可再生材料制作，易于环境降解，减少环境压力。"</p>
+
+            <img src="./img/svg-3/4/03.svg" onclick="history.go(-1)" class="my4__back">
+        </section>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/hysjt.js"></script>
+    <!-- <script src="js/control.js"></script> -->
+</body>
+
+</html>

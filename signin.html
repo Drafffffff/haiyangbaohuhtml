@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Morphing Background Shapes | Demo 2 | Codrops</title>
+    <title>登陆-PLASTFREE</title>
     <meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
     <meta name="keywords"
         content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
     <meta name="author" content="Codrops" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/siginin.css" />
     <link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
     <script>
         document.documentElement.className = 'js';
@@ -27,56 +27,49 @@
         }
         if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
     </script>
+</head>
 
 <body class="demo-2 ">
- 
-    <main>
 
-        
+    <main>
         <div class="content-wrap">
             <div class="content content--layout content--my-1">
+                <img src="./img/login/logo.svg" onclick="location='./index.html'" class="my_logo">
+                <img src="./img/login/sidebar.svg" class="my_rightbar">
 
-            </div>
-        </div>
-        <div class="content-wrap">
-            <div class="content content--layout content--my-2">
-
-                <img src="./img/svg-2/hand.svg" class="content__hand" id="handElement"
-                    style="transform: translateX(-700px); ">
-                <img src="./img/svg-2/top.svg" class="content__top">
-                <img src="./img/svg-2/hand-line.svg" class="content__handline">
-
-                <div class="my2__text textIn">
-                    <p>每1分钟</p>
-                    <p>都有1卡车的垃圾倒入海洋</p>
+                <div class="my1__title">
+                    <img src="./img/login/logo.svg" class="main_logo">
                 </div>
-                <div class="content__fill1"></div>
-                <div class="content__fill2"></div>
-                <div class="content__fill3"></div>
 
-                <!-- <img src="./img/svg/bin-top.svg" class="content__bin-top"> -->
+                <img src="./img/login/signinput.svg" class="my_input">
+                <img src="./img/login/signin.svg" onclick="location='./login.html'" class="my_login">
+
+            <img src="./img/svg-3/4/03.svg" onclick="history.go(-1)" class="my4__back">
+
+
 
             </div>
+
+
         </div>
 
-        
         <!-- Related demos -->
-        <section class="content content--related">
-            <p class="content__info"></p>
-            <a class="content__related-item" href="https://tympanus.net/Development/ElasticSVGElements/">
-                <img class="content__related-img" src="">
-                <h3 class="content__related-title"></h3>
-            </a>
-            <a class="content__related-item" href="https://tympanus.net/Development/ItemRevealer/">
-                <img class="content__related-img" src="">
-                <h3 class="content__related-title"></h3>
-            </a>
+        <section class="content  content--my-4">
+            <div class="my4__title">
+                <p>联系我们</p>
+            </div>
+
+
+            <img src="./img/svg-3/4/03.svg" onclick="history.go(-1)" class="my4__back">
+            <img src="./img/about/textbox.svg" class="my4__textbox">
+            <img src="./img/about/buttom.svg" class="my4__buttom">
         </section>
     </main>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/scrollMonitor.js"></script>
-    <script src="js/control.js"></script>
+    <script src="js/hysjt.js"></script>
+    <!-- <script src="js/control.js"></script> -->
 </body>
 
 </html>
